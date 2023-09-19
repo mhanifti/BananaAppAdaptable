@@ -25,11 +25,16 @@ Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-b
 	5. Pada main.html, yang sebelumnya description hanya memasukkan String, saya merubahnya dengan link dengan memakai <a href="{{product.link}}">link</a> agar dapat dibuka dengan mudah.
 
 Mengakses kelima URL di poin 2 menggunakan Postman, membuat screenshot dari hasil akses URL pada Postman, dan menambahkannya ke dalam README.md.
-1. ![Postman with HTML](images/postman_html.jpg)
-2. ![Postman with XML](images/postman_xml.jpg)
-3. ![Postman with JSON](images/postman_json.jpg)
-4. ![Postman with XML by ID](images/postman_xml_id.jpg)
-5. ![Postman with JSON by ID](images/postman_json_id.jpg)
+1. Postman with HTML
+![Postman with HTML](images/postman_html.jpg)
+2. Postman with XML
+![Postman with XML](images/postman_xml.jpg)
+3. Postman with JSON
+![Postman with JSON](images/postman_json.jpg)
+5. Postman with XML by ID
+![Postman with XML by ID](images/postman_xml_id.jpg)
+6. Postman with JSON by ID
+![Postman with JSON by ID](images/postman_json_id.jpg)
 
 ## Tugas 2
 Jelaskan bagaimana cara kamu mengimplementasikan checklist step-by-step?
