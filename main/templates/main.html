@@ -11,6 +11,7 @@
     <table>
         <tr>
             <th>Name</th>
+            <th>Image</th>
             <th>Price</th>
             <th>Link</th>
             <th>Date Added</th>
@@ -21,12 +22,17 @@
         {% for product in products %}
             <tr>
                 <td>{{product.name}}</td>
+                <td><img src="{{product.image}}" alt="{{product.name}}" style="height: 100px;"></td>
                 <td>{{product.price}}</td>
-                <td><a href="{{product.link}}">link</a></td>
+                <td><a href="{{product.link}}" target="_blank">link</a></td>
                 <td>{{product.date_added}}</td>
             </tr>
         {% endfor %}
     </table>
+
+    <br />
+
+    <h5>Sesi terakhir login: {{ last_login }}</h5>
     
     <br />
     
@@ -35,5 +41,9 @@
             Add New Game
         </button>
     </a>
-    
+    <a href="{% url 'main:logout' %}">
+        <button>
+            Logout
+        </button>
+    </a>
     {% endblock content %}
