@@ -11,6 +11,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 
+max_login = 0
+
 @login_required(login_url='/login')
 def show_main(request):
     products = Product.objects.filter(user=request.user)
@@ -67,17 +69,24 @@ def register(request):
     return render(request, 'register.html', context)
 
 def login_user(request):
+    global max_login
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(request, username=username, password=password)
         if user is not None:
+            max_login = 0
             login(request, user)
             response = HttpResponseRedirect(reverse("main:show_main")) 
             response.set_cookie('last_login', str(datetime.datetime.now()))
             return response
+        elif max_login == 3:
+            messages.info(request, 'Sorry, incorrect username or password. Maybe you can make new Account!')
+            max_login = 0
+            return register(request)
         else:
             messages.info(request, 'Sorry, incorrect username or password. Please try again.')
+            max_login += 1
     context = {}
     return render(request, 'login.html', context)
 

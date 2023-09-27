@@ -1,5 +1,24 @@
 Repository Untuk Deploy Aplikasi pada adaptable.io
 
+## Tugas 4
+Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
+:	UserCreationForm adalah sebuah framework yang biasanya digunakan untuk membuat form registrasi user pada aplikasi web. Kelebihan framework tersebut ada pada penggunaan yang mudah karena sudah menjadi default pada Django sendiri, validasi otomatis, dan juga terintegrasi pada model User. Akan tetapi framework ini terbatas pada Model bawaan Django, tetapi hal itu bisa diatasi dengan customization.
+
+Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
+:	Sistem otentikasi Django sendiri menangani keduanya, singkatnya autentikasi ditujukan untuk memverifikasi pengguna, sedangkan pada otorisasi ditujukan untuk menentukan apa saja yang boleh dilakukan oleh pengguna yang diverifikasi. Dan kenapa keduanya penting, misalkan jika tanpa ada verifikasi, maka pengguna anonymus bisa melakukan apa saja, sedangkan jika tidak ada otorisasi, maka tidak ada batasan diantara semua pengguna dalam mengakses fitur pada aplikasi web.
+
+Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengolah data sesi pengguna?
+:	cookies adalah sebuah penyimpanan sementara, atau dalam konteks sistem komputer, cookies bisa dianalogikan sebagai ram (penyimpanan kecil, tetapi efisien). Cookies sendiri hanya memiliki size maksimal 4mb, tetapi itu sudah cukup untuk menyimpan informasi login, memungkinkan website menyediakan konten yang lebih personal, menyimpan pengaturan pada web, dan biasanya sebagai faktor dalam menentukan iklan yang muncul. Django menyimpan cookies dalam bentuk variable dan value. Ketika Django ingin mengakses dengan request.COOKIES.get(variable) akan mendapatkan value dari variable cookies tersebut.
+
+Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?
+:	Secara default dalam pengembangan web, cookies bersifat private yang hanya bisa dilihat melalui komputer pribadi. Maka bisa dibilang aman untuk penggunaan pada komputer pribadi. Akan tetapi jika menggunakan komputer umum, maka hati-hati pada cookies, sebab informasi penting bisa terlihat. Maka dari itu lebih baik menghapus cookies pada website ketika menggunakan komputer umum.
+
+Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+:	1. Saya membuat login.html dan register.html. Lalu membuat fungsinya pada views.py dan membuat path pada urls.py.
+	2. Mengatur tampilan main agar sesuai dengan user yang sedang login.
+	3. Lalu saya juga membuat max_attempt untuk login, ketika sudah 3 kali, maka website menyarankan untuk membuat akun baru.
+	4. Lalu saya juga menset cookies ketika login dilakukan, dan menghapus cookies ketika logout dilakukan.
+
 ## Tugas 3
 Apa Perbedaan antara POST dan GET dalam Django?
 :	Perbedaan diantara POST dan GET adalah cara mereka mengirim data kita ke database. 
