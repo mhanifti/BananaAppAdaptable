@@ -1,4 +1,24 @@
 Repository Untuk Deploy Aplikasi pada adaptable.io
+## Tugas 5
+Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
+:	Manfaat dari element selector adalah untuk menerapkan tampilan umum pada suatu element seperti halnya <button></button> yang pasti mempunyai border dan animasi button. Waktu yang tepat digunakan ketika ingin memberikan base design untuk element tertentu. seperti ingin menggunakan font times new roman pada <p></p>.
+
+Jelaskan HTML5 Tag yang kamu ketahui.
+:	<header> bisa dianalogikan sebagai kotak untuk menampung element yang ingin ditaruh di header seperti logo, judul, navigation bar, search bar, dan element yang biasanya ada pada bagian paling atas sebuah aplikasi web.
+	<footer> bisa dianalogikan sebagai kotak untuk menampung element yang ingin ditaruh di footer seperti about us, contact, logo, dan element yang biasanya ada pada bagian paling bawah sebuah aplikasi web.
+	<aside> bisa dianalogikan sebagai kotak untuk menampung element yang ingin ditaruh di samping. Hanya beberapa web saja yang memakainya, yang paling jelas ada pada web scele.
+
+Jelaskan perbedaan antara margin dan padding.
+:	Margin adalah bagian luar dari suatu element setelah border. Biasanya digunakan untuk memberi jarak antara element agar tidak terlalu dekat. Sedangkan untuk padding adalah bagian dalam dari suatu element sebelum border. Padding ini lebih variasi digunakan seperti backgroud, jarak element dengan border. Hal yang bisa dibedakan adalah pada padding termasuk pada Pseudo-class seperti hover, sedangkan pada margin tidak masuk. sehingga ketika element tersebut menggunakan hover dan mengubah background-color. maka akan berubah ketika kursor pada bagian element hingga border.
+
+Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya.
+:	Tailwind CSS lebih sulit digunakan, tetapi bisa lebih leluasa untuk kreatif dan perubahan. Sedangkan pada Bootstrap lebih mudah digunakan, tetapi lebih sulit untuk melakukan perubahan.
+
+Jelaskan bagaimana cara kamu mengimplementasikan checklist  di atas secara step-by-step.
+: 	saya menggunakan Bootstrap untuk framework, dan menaruh pada base.html.
+	Saya juga menambahkan delete dan edit pada inventori.
+	Lalu menghubungkan css yang ada pada folder static di folder project. walau masih bingung cara terbaik untuk menambahkan css.
+	Mengubah background color, padding dan margin agar terlihat lebih rapih.
 
 ## Tugas 4
 Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
