@@ -28,7 +28,7 @@
 
             <tr>
                 <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
+                <td class="lgn_btn"><input class="btn login_btn" type="submit" value="Login"></td>
             </tr>
         </table>
     </form>
@@ -41,7 +41,7 @@
         </ul>
     {% endif %}     
         
-    Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a>
+    <p class="register_link">Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a></p>
 
 </div>
 
