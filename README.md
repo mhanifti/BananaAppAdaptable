@@ -1,4 +1,45 @@
 Repository Untuk Deploy Aplikasi pada adaptable.io
+
+## Tugas 6
+Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
+:	Asynchronous programming adalah program yang biasanya tidak bersinkronisasi antara beberapa tugas atau bisa dibilang tiap tugas independen tanpa menunggu tugas lainnya. Sedangkan pada Synchronous programming adalah program yang bersinkronisasi antara beberapa tugas atau bergiliran antar tugas (system blocking) sehingga meminimalisir terjadinya race condition.
+
+Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma event-driven programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
+:	Maksud dari paradigma event-driven programming adalah pendekatan dimana eksekusi program berjalan berdasarkan peristiwa seperti onclick dan sebagainya. Pada tugas ini, contoh penerapannya pada ajax create di tombol "create new item", disana memakai onclick yang dimasukkan ketika program pertama dijalankan, sehingga ketika event click terjadi, maka muncul pop-up untuk membuat item terbaru itu.
+
+Jelaskan penerapan asynchronous programming pada AJAX.
+:	penerapan asynchronous programming pada AJAX adalah teknik pemrograman web yang memungkinkan web berinteraksi tanpa merefresh halaman tersebut sehingga web lebih responsif dan dinamis, beberapa penerapannya bisa menggunakan fetch API, XMLHttpRequest, dan sebagainya.
+
+Pada PBP kali ini, penerapan AJAX dilakukan dengan menggunakan Fetch API daripada library jQuery. Bandingkanlah kedua teknologi tersebut dan tuliskan pendapat kamu teknologi manakah yang lebih baik untuk digunakan.
+:	Perbedaan dari kedua tersebut adalah Fetch API hanya digunakan untuk sekedar menerima permintaan dan response HTTP, sedangkan pada library jQuery memiliki lebih banyak fitur. Kedua teknologi mempunyai pangsa pasarnya masing-masing, untuk Fetch API lebih ringan dan mudah sehingga cocok untuk web yang tidak terlalu mementingkan fitur, sedangkan library jQuery lebih berat dan sulit untuk diimplementasikan sehingga cocok untuk web besar yang memang membutuhkan banyak fitur.
+
+Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+:	1. Mengubah list item yang sebelumnya tanpa ajax, menjadi menggunakan ajax GET.
+	2. Lalu mengubah cara menambahkan item yang awalnya harus ke halaman lain dan selalu merefresh halaman menjadi pop-up dan hanya merefresh list item saja.
+ 	3. Mengerjakan README.md.
+
+## Tugas 5
+Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
+:	Manfaat dari element selector adalah untuk menerapkan tampilan umum pada suatu element seperti halnya <button></button> yang pasti mempunyai border dan animasi button. Waktu yang tepat digunakan ketika ingin memberikan base design untuk element tertentu. seperti ingin menggunakan font times new roman pada <p></p>.
+
+Jelaskan HTML5 Tag yang kamu ketahui.
+:	<header> bisa dianalogikan sebagai kotak untuk menampung element yang ingin ditaruh di header seperti logo, judul, navigation bar, search bar, dan element yang biasanya ada pada bagian paling atas sebuah aplikasi web.
+	<footer> bisa dianalogikan sebagai kotak untuk menampung element yang ingin ditaruh di footer seperti about us, contact, logo, dan element yang biasanya ada pada bagian paling bawah sebuah aplikasi web.
+	<aside> bisa dianalogikan sebagai kotak untuk menampung element yang ingin ditaruh di samping. Hanya beberapa web saja yang memakainya, yang paling jelas ada pada web scele.
+
+Jelaskan perbedaan antara margin dan padding.
+:	Margin adalah bagian luar dari suatu element setelah border. Biasanya digunakan untuk memberi jarak antara element agar tidak terlalu dekat. Sedangkan untuk padding adalah bagian dalam dari suatu element sebelum border. Padding ini lebih variasi digunakan seperti backgroud, jarak element dengan border. Hal yang bisa dibedakan adalah pada padding termasuk pada Pseudo-class seperti hover, sedangkan pada margin tidak masuk. sehingga ketika element tersebut menggunakan hover dan mengubah background-color. maka akan berubah ketika kursor pada bagian element hingga border.
+
+Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya.
+:	Tailwind CSS lebih sulit digunakan, tetapi bisa lebih leluasa untuk kreatif dan perubahan. Sedangkan pada Bootstrap lebih mudah digunakan, tetapi lebih sulit untuk melakukan perubahan.
+
+Jelaskan bagaimana cara kamu mengimplementasikan checklist  di atas secara step-by-step.
+: 	saya menggunakan Bootstrap untuk framework, dan menaruh pada base.html.
+	Saya juga menambahkan delete dan edit pada inventori.
+	Lalu menghubungkan css yang ada pada folder static di folder project. walau masih bingung cara terbaik untuk menambahkan css.
+	Mengubah background color, padding dan margin agar terlihat lebih rapih.
+
+
 ## Tugas 5
 Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
 :	Manfaat dari element selector adalah untuk menerapkan tampilan umum pada suatu element seperti halnya <button></button> yang pasti mempunyai border dan animasi button. Waktu yang tepat digunakan ketika ingin memberikan base design untuk element tertentu. seperti ingin menggunakan font times new roman pada <p></p>.
