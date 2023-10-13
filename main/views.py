@@ -10,6 +10,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
 
 max_login = 0
 
@@ -111,6 +112,7 @@ def edit_product(request, id):
     context = {'form': form}
     return render(request, "edit_product.html", context)
 
+@csrf_exempt
 def delete_product(request, id):
     # Get data berdasarkan ID
     product = Product.objects.get(pk = id)
@@ -118,3 +120,23 @@ def delete_product(request, id):
     product.delete()
     # Kembali ke halaman awal
     return HttpResponseRedirect(reverse('main:show_main'))
+
+def get_product_json(request):
+    product_item = Product.objects.all()
+    return HttpResponse(serializers.serialize('json', product_item))
+
+@csrf_exempt
+def add_product_ajax(request):
+    if request.method == 'POST':
+        name = request.POST.get("name")
+        image = request.POST.get("image")
+        price = request.POST.get("price")
+        link = request.POST.get("link")
+        user = request.user
+
+        new_product = Product(user=user, name=name, image=image, price=price, link=link)
+        new_product.save()
+
+        return HttpResponse(b"CREATED", status=201)
+
+    return HttpResponseNotFound()
