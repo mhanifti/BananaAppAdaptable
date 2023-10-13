@@ -1,4 +1,23 @@
 Repository Untuk Deploy Aplikasi pada adaptable.io
+
+## Tugas 5
+Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
+:	Asynchronous programming adalah program yang biasanya tidak bersinkronisasi antara beberapa tugas atau bisa dibilang tiap tugas independen tanpa menunggu tugas lainnya. Sedangkan pada Synchronous programming adalah program yang bersinkronisasi antara beberapa tugas atau bergiliran antar tugas (system blocking) sehingga meminimalisir terjadinya race condition.
+
+Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma event-driven programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
+:	Maksud dari paradigma event-driven programming adalah pendekatan dimana eksekusi program berjalan berdasarkan peristiwa seperti onclick dan sebagainya. Pada tugas ini, contoh penerapannya pada ajax create di tombol "create new item", disana memakai onclick yang dimasukkan ketika program pertama dijalankan, sehingga ketika event click terjadi, maka muncul pop-up untuk membuat item terbaru itu.
+
+Jelaskan penerapan asynchronous programming pada AJAX.
+:	penerapan asynchronous programming pada AJAX adalah teknik pemrograman web yang memungkinkan web berinteraksi tanpa merefresh halaman tersebut sehingga web lebih responsif dan dinamis, beberapa penerapannya bisa menggunakan fetch API, XMLHttpRequest, dan sebagainya.
+
+Pada PBP kali ini, penerapan AJAX dilakukan dengan menggunakan Fetch API daripada library jQuery. Bandingkanlah kedua teknologi tersebut dan tuliskan pendapat kamu teknologi manakah yang lebih baik untuk digunakan.
+:	Perbedaan dari kedua tersebut adalah Fetch API hanya digunakan untuk sekedar menerima permintaan dan response HTTP, sedangkan pada library jQuery memiliki lebih banyak fitur. Kedua teknologi mempunyai pangsa pasarnya masing-masing, untuk Fetch API lebih ringan dan mudah sehingga cocok untuk web yang tidak terlalu mementingkan fitur, sedangkan library jQuery lebih berat dan sulit untuk diimplementasikan sehingga cocok untuk web besar yang memang membutuhkan banyak fitur.
+
+Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+:	1. Mengubah list item yang sebelumnya tanpa ajax, menjadi menggunakan ajax GET.
+	2. Lalu mengubah cara menambahkan item yang awalnya harus ke halaman lain dan selalu merefresh halaman menjadi pop-up dan hanya merefresh list item saja.
+ 	3. Mengerjakan README.md.
+
 ## Tugas 5
 Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
 :	Manfaat dari element selector adalah untuk menerapkan tampilan umum pada suatu element seperti halnya <button></button> yang pasti mempunyai border dan animasi button. Waktu yang tepat digunakan ketika ingin memberikan base design untuk element tertentu. seperti ingin menggunakan font times new roman pada <p></p>.
