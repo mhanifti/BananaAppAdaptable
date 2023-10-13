@@ -18,6 +18,7 @@ Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-b
 	2. Lalu mengubah cara menambahkan item yang awalnya harus ke halaman lain dan selalu merefresh halaman menjadi pop-up dan hanya merefresh list item saja.
  	3. Mengerjakan README.md.
 
+<<<<<<< HEAD
 ## Tugas 5
 Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
 :	Manfaat dari element selector adalah untuk menerapkan tampilan umum pada suatu element seperti halnya <button></button> yang pasti mempunyai border dan animasi button. Waktu yang tepat digunakan ketika ingin memberikan base design untuk element tertentu. seperti ingin menggunakan font times new roman pada <p></p>.
@@ -40,6 +41,8 @@ Jelaskan bagaimana cara kamu mengimplementasikan checklist  di atas secara step-
 	Mengubah background color, padding dan margin agar terlihat lebih rapih.
 
 
+=======
+>>>>>>> 3b00131f6f2d9badd41ebde5da1a4c4fa14bb4ff
 ## Tugas 5
 Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
 :	Manfaat dari element selector adalah untuk menerapkan tampilan umum pada suatu element seperti halnya <button></button> yang pasti mempunyai border dan animasi button. Waktu yang tepat digunakan ketika ingin memberikan base design untuk element tertentu. seperti ingin menggunakan font times new roman pada <p></p>.
