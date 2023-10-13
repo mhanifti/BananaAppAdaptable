@@ -1,6 +1,6 @@
 Repository Untuk Deploy Aplikasi pada adaptable.io
 
-## Tugas 5
+## Tugas 6
 Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
 :	Asynchronous programming adalah program yang biasanya tidak bersinkronisasi antara beberapa tugas atau bisa dibilang tiap tugas independen tanpa menunggu tugas lainnya. Sedangkan pada Synchronous programming adalah program yang bersinkronisasi antara beberapa tugas atau bergiliran antar tugas (system blocking) sehingga meminimalisir terjadinya race condition.
 
