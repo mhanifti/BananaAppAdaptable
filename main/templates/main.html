@@ -81,9 +81,13 @@
             <th>Link</th>
             <th>Date Added</th>
         </tr>`
-        products.forEach((item) => {
-            htmlString += `\n<tr class="last-product-row">
-            <td>${item.fields.name}</td>
+        products.forEach((item, index, arr) => {
+            if (arr[index-1]) {
+                htmlString += `\n<tr class="last-product-row">`
+            } else {
+                htmlString += `\n<tr>`
+            }
+            htmlString += `<td>${item.fields.name}</td>
             <td><img src="${item.fields.image}" alt="${item.fields.name}" style="height: 100px;"></td>
             <td>Rp.${item.fields.price},-</td>
             <td><a href="${item.fields.link}" target="_blank">link</a></td>
